@@ -23,4 +23,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(myGLSourceView);
 
     }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        myGLSourceView.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        myGLSourceView.onResume();
+    }
 }
